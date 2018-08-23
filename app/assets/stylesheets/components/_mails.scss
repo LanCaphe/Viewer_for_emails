@@ -1,0 +1,61 @@
+@import "../variables/*";
+
+.emails-wrapper {
+    min-height: 800px;
+    background-color: $light-grey
+}
+
+.emails-grid {
+    height: 800px;
+    display: grid;
+    grid-template-columns: 350px 1fr ;
+    grid-template-rows: auto;
+    column-gap: 30px;
+}
+
+.emails-object {
+    margin:50px 0;
+    background-color: white;
+    grid-row: 1;
+    grid-column: 1;
+    box-shadow: 2px 2px 2px $grey;
+    border-radius: 5px;
+    overflow-y: scroll
+}
+
+.emails-grid h4 {
+    text-align: center;
+    margin-top: 20px;
+    @include object-font;
+    color: brown
+}
+
+.emails-object-link:hover {
+    color: $blue !important
+}
+
+.emails-body {
+    margin:50px 0;
+    background-color: white;
+    grid-row: 1;
+    grid-column: 2;
+    box-shadow: 2px 2px 2px $grey;
+    border-radius: 5px
+}
+
+.emails-body-text {
+    padding: 50px;
+}
+
+.emails-grid ul li {
+    margin: 15px;
+    padding: 15px
+}
+
+.emails-object-block {
+    padding: 5px;
+}
+
+.emails-object-block:hover {
+    background-color: $light-grey
+}

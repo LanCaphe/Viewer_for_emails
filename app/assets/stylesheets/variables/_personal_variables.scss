@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700');
+$blue: #586ba4;
+$grey: #b7b5b3;
+$dark-grey: #282828;
+$light-grey: #f6f6f6;
+
+@mixin object-font {
+    font-family: 'Bitter', serif;
+    font-weight: 700;
+}
+
+@mixin body-font {
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+}
