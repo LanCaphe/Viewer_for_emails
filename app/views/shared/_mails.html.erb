@@ -1,0 +1,20 @@
+<section class="emails-wrapper">
+    <div class="container">
+        <div class="emails-grid">
+            <div class="emails-object">
+                <h4>Emails reçus (objets visibles)</h4>
+                <!-- AFFICHER ICI TOUS LES OBJETS DES EMAILS -->
+                    <ul>
+                        <% @emails.each do |email| %>
+                            <a href="#" class="emails-object-link"><li class="emails-object-block"><%= email.object %></li></a>
+                        <% end %>
+                    </ul>
+            </div>
+            <div class="emails-body">
+                <h4>Détails de l'email</h4>
+                <!-- AFFICHER ICI LES EMAILS EN ENTIER -->
+                <p class="emails-body-text">Ceci est un texte de test qui n'est même pas censé être là</p>
+            </div>
+        </div>
+    </div>
+</section>
