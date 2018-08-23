@@ -1,7 +1,5 @@
 class EmailController < ApplicationController
   def index
-    def index
-      @emails = Email.all
-    end
+    @emails = Email.all
   end
 end
