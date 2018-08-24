@@ -1,24 +1,14 @@
-# README
+# Viewer emails avec AJAX
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Pourquoi? 
 
-Things you may want to cover:
+Cette application a été réalisée dans le cadre de la formation, The Hacking project. Pendant la semaine 8, il s'agit de d'uttiliser l'AJAX afin de créer une view affichant le contenu de mails en cliquant sur leur objet. Ce projet est réalisé par la team de Lille, Maxime et Lan. Disponible uniquement en local (problème lors du push heroku).
 
-* Ruby version
+## Comment la lancer:
 
-* System dependencies
+* En console, faire ```bundle instal --without production``` .
+* Puis les commandes: ``` rails db:migrate``` et ```rails db:seed```.  
+et ouvre votre navigateur et diriger vous sur le local host 3000.
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
