@@ -5,9 +5,6 @@ class EmailController < ApplicationController
 
   def select
     @emails = Email.new
-    current = Email.find(params[:id])
-    current.read = true
-    current.save
 
     respond_to do |f|
       f.html { redirect_to emails_url }
