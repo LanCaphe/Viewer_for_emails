@@ -12,4 +12,13 @@ class EmailController < ApplicationController
     end
   end
 
+  def destroy 
+    Email.destroy(params[:id])
+
+    respond_to do |f|
+      f.html { redirect_to emails_url }
+      f.js
+    end
+  end
+  
 end

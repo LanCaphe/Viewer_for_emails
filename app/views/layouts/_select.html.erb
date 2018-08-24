@@ -1,3 +1,4 @@
-<em>Object :</em><strong> <%= Email.find(params[:id]).object %></strong>
+<p class="object"><strong> <%= Email.find(params[:id]).object %></strong></p>
 <br/>
-<p><%= Email.find(params[:id]).body %></p>
+<p class="body"><%= Email.find(params[:id]).body %></p><br/>
+<%= link_to "Suppression du mail", destroy_email_path(id: params[:id]), data: {confirm: 't\'es sûr de toi ?'}, remote: true, :class => 'emails-delete-link' %>

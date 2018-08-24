@@ -40,7 +40,8 @@
     grid-row: 1;
     grid-column: 2;
     box-shadow: 2px 2px 2px $grey;
-    border-radius: 5px
+    border-radius: 5px;
+    padding: 40px;
 }
 
 .emails-body-text {
@@ -58,4 +59,22 @@
 
 .emails-object-block:hover {
     background-color: $light-grey;
+}
+
+.object {
+    color: $blue;
+    text-align: center
+}
+
+.body {
+    line-height: 1.5
+}
+
+.emails-delete-link {
+    color: #ff3636;
+    margin-left: 35px
+}
+
+.emails-delete-link:hover {
+    color: red
 }

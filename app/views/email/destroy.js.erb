@@ -1,0 +1,6 @@
+$(document).ready(function() {
+
+  $('#<%= params[:id] %>').fadeOut();
+  $('#<%= params[:id] %>').parent().parent().remove();
+  $('.emails-body').empty();
+});
