@@ -1,1 +1,19 @@
-<%= render 'shared/mails' %>
+<section class="emails-wrapper">
+    <div class="container">
+    <%= link_to 'Number Alert', email_path(42), remote: true %>
+        <div class="emails-grid">
+            <div class="emails-object">
+                <h4>Emails reçus (objets visibles)</h4>
+                <!-- AFFICHER ICI TOUS LES OBJETS DES EMAILS -->
+                <ul>
+                    <% @emails.each do |email| %>
+                        <li class="emails-object-block"><%= link_to email.object, select_email_path(id: email.id), remote: true, :class => 'emails-object-link'%></li>
+                    <% end %>
+                </ul>
+            </div>
+            <div class="emails-body">
+                Now you see me
+            </div>
+        </div>
+    </div>
+</section>
